@@ -15,6 +15,7 @@ namespace ChrisCurran_S00210475_Final_Exam
         public string Location { get; set; }
         public decimal Price { get; set; }
         public string Description { get; set; }
+        public string PropertyImage { get; set; }
 
         public void RentIncrease(decimal pcIncrease)
         {

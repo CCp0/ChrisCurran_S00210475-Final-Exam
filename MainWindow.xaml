@@ -6,8 +6,17 @@
         xmlns:local="clr-namespace:ChrisCurran_S00210475_Final_Exam"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Window.Resources>
+        <DataTemplate x:Key="listboxTemplate">
+            <StackPanel Orientation="Horizontal">
+                <Image Source="{Binding PropertyImage}" Width="30" Height="30"/>
+                <TextBlock Text= "{Binding Location}" Margin="3"/>
+                <TextBlock Text="{Binding Price}"/>
+            </StackPanel>
+        </DataTemplate>
+    </Window.Resources>
     <Grid>
-        <ListBox x:Name="lbxListings" HorizontalAlignment="Left" Height="252" Margin="30,96,0,0" VerticalAlignment="Top" Width="283" SelectionChanged="lbxListings_SelectionChanged"/>
+        <ListBox x:Name="lbxListings" ItemTemplate="{StaticResource listboxTemplate}" HorizontalAlignment="Left" Height="252" Margin="30,96,0,0" VerticalAlignment="Top" Width="283" SelectionChanged="lbxListings_SelectionChanged"/>
         <Label Content="Property Listing" HorizontalAlignment="Left" Margin="30,38,0,0" VerticalAlignment="Top" Width="250" FontSize="32"/>
         <TextBlock x:Name="tblkDescription" HorizontalAlignment="Left" Margin="382,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="255" Width="269"/>
         <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="708,70,0,0" VerticalAlignment="Top" Width="75"/>
