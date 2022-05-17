@@ -20,6 +20,10 @@ namespace ChrisCurran_S00210475_Final_Exam
         {
             Price = Price + (Price * pcIncrease/100);
         }
+        public override string ToString()
+        {
+            return Location + " €" + Price;
+        }
         public class PropertyDetails : DbContext
         {
             public PropertyDetails() : base("MyPropertyDetails") { }
