@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ChrisCurran_S00210475_Final_Exam"
         mc:Ignorable="d"
-        Title="PropertyAdd" Height="450" Width="800">
+        Title="PropertyAdd" Height="450" Width="800" Closed="Window_Closed">
     <Grid>
         <ComboBox x:Name="cmbTypeOfRental" HorizontalAlignment="Left" Margin="224,45,0,0" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="tbxLocation" HorizontalAlignment="Left" Height="23" Margin="226,110,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>

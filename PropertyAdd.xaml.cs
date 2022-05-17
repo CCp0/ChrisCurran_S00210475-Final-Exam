@@ -34,11 +34,11 @@ namespace ChrisCurran_S00210475_Final_Exam
                 PropertyDetails db = new PropertyDetails();
                 using (db)
                 {
-                    //Base population of leaderboard
-                    RentalProperty newEntry = new RentalProperty() { Location = tbxLocation.Text, Price = Convert.ToDecimal(tbxPrice.Text), Description = tblkDescription.Text, TypeOfRental = cmbTypeOfRental.SelectedItem.ToString(), PropertyImage = "/images/" + cmbTypeOfRental.ToString().ToLower() + ".png"};
+                    RentalProperty newEntry = new RentalProperty() { Location = tbxLocation.Text, Price = Convert.ToDecimal(tbxPrice.Text), Description = tblkDescription.Text, TypeOfRental = cmbTypeOfRental.SelectedItem.ToString(), PropertyImage = "/images/" + cmbTypeOfRental.SelectedValue.ToString().ToLower() + ".png"};
                     db.Properties.Add(newEntry); //Adds the new entry
                     db.SaveChanges(); //Saves the added property to the database
                     MessageBox.Show("Property Added");
+                    ((MainWindow)Application.Current.MainWindow).lbxListings.Items.Refresh(); //Refreshes listbox when saved
                 }
             }
             catch (Exception err)

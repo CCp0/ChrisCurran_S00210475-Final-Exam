@@ -20,7 +20,6 @@
         <Label Content="Property Listing" HorizontalAlignment="Left" Margin="30,38,0,0" VerticalAlignment="Top" Width="250" FontSize="32"/>
         <TextBlock x:Name="tblkDescription" HorizontalAlignment="Left" Margin="382,93,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="255" Width="269"/>
         <Button x:Name="btnAdd" Content="Add" HorizontalAlignment="Left" Margin="708,70,0,0" VerticalAlignment="Top" Width="75" Click="btnAdd_Click"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="511,320,0,0" VerticalAlignment="Top" Width="100" Source="/images/flat.png"/>
 
     </Grid>
 </Window>
