@@ -23,7 +23,7 @@ namespace ChrisCurran_S00210475_Final_Exam
         public PropertyAdd()
         {
             InitializeComponent();
-            cmbTypeOfRental.Items.Add("Flat");
+            cmbTypeOfRental.Items.Add("Flat"); //Sets the combo box values
             cmbTypeOfRental.Items.Add("House");
             cmbTypeOfRental.Items.Add("Share");
         }
@@ -35,7 +35,7 @@ namespace ChrisCurran_S00210475_Final_Exam
                 using (db)
                 {
                     //Base population of leaderboard
-                    RentalProperty newEntry = new RentalProperty() { Location = tbxLocation.Text, Price = Convert.ToDecimal(tbxPrice.Text), Description = tblkDescription.Text, TypeOfRental = (string)cmbTypeOfRental.SelectedItem, PropertyImage = "/images/" + cmbTypeOfRental.ToString().ToLower()};
+                    RentalProperty newEntry = new RentalProperty() { Location = tbxLocation.Text, Price = Convert.ToDecimal(tbxPrice.Text), Description = tblkDescription.Text, TypeOfRental = cmbTypeOfRental.SelectedItem.ToString(), PropertyImage = "/images/" + cmbTypeOfRental.ToString().ToLower() + ".png"};
                     db.Properties.Add(newEntry); //Adds the new entry
                     db.SaveChanges(); //Saves the added property to the database
                     MessageBox.Show("Property Added");
@@ -43,7 +43,7 @@ namespace ChrisCurran_S00210475_Final_Exam
             }
             catch (Exception err)
             {
-                MessageBox.Show("The following error has occurred: " + err.Message);
+                MessageBox.Show("The following error has occurred: " + err.Message); //Catches any errors such as non inputted fields
             }
         }
     }
