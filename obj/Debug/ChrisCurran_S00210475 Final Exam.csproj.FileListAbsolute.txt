@@ -18,3 +18,5 @@ C:\Users\chris\OneDrive - Institute of Technology Sligo\OBJ Labs\Semester 2\Fina
 C:\Users\chris\OneDrive - Institute of Technology Sligo\OBJ Labs\Semester 2\Final Exam\ChrisCurran_S00210475 Final Exam\ChrisCurran_S00210475 Final Exam\bin\Debug\EntityFramework.xml
 C:\Users\chris\OneDrive - Institute of Technology Sligo\OBJ Labs\Semester 2\Final Exam\ChrisCurran_S00210475 Final Exam\ChrisCurran_S00210475 Final Exam\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\chris\OneDrive - Institute of Technology Sligo\OBJ Labs\Semester 2\Final Exam\ChrisCurran_S00210475 Final Exam\ChrisCurran_S00210475 Final Exam\obj\Debug\ChrisCurran_S00210475 Final Exam.csproj.CopyComplete
+C:\Users\chris\OneDrive - Institute of Technology Sligo\OBJ Labs\Semester 2\Final Exam\ChrisCurran_S00210475 Final Exam\ChrisCurran_S00210475 Final Exam\obj\Debug\PropertyAdd.g.cs
+C:\Users\chris\OneDrive - Institute of Technology Sligo\OBJ Labs\Semester 2\Final Exam\ChrisCurran_S00210475 Final Exam\ChrisCurran_S00210475 Final Exam\obj\Debug\PropertyAdd.baml

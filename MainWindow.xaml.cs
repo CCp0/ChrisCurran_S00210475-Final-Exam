@@ -45,5 +45,11 @@ namespace ChrisCurran_S00210475_Final_Exam
                 tblkDescription.Text = selected.Description;
             }
         }
+
+        private void btnAdd_Click(object sender, RoutedEventArgs e)
+        {
+            PropertyAdd propertyAddWindow = new PropertyAdd();
+            propertyAddWindow.Show();
+        }
     }
 }
