@@ -21,6 +21,7 @@ namespace ChrisCurran_S00210475_Final_Exam
     /// </summary>
     public partial class MainWindow : Window
     {
+        //https://github.com/CCp0/ChrisCurran_S00210475-Final-Exam
         List<RentalProperty> allProperties = new List<RentalProperty>();
         public MainWindow()
         {
